@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Request
 import json
 from kafka import KafkaProducer
+import asyncio
 
 app = FastAPI()
 producer = KafkaProducer(bootstrap_servers=["localhost:9092"], value_serializer=lambda x: json.dumps(x).encode('utf-8'))
