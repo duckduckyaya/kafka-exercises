@@ -1,1 +1,1 @@
-# kafka-practice-repo
+# kafka-exercises
